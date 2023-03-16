@@ -1,9 +1,10 @@
 #Author: William Bukowski
 
 import nltk
+from nltk.corpus import stopwords
 
-text = "Paperspace is built for the future where hardware and software are linked, a lot more"
-text = text.lower()
+loopBool = True
+while(loopBool):
+    text = input("Please enter your chat prompt: ")
 
-word_tokens = nltk.word_tokenize(text)
-print(word_tokens)
+    loopBool = False
